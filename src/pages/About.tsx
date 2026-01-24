@@ -3,22 +3,22 @@ import { Calendar, Code, MapPin, Sparkles } from "lucide-react";
 const About = () => {
   const skills = {
     frontend: [
-      { name: "HTML", level: 95 },
-      { name: "CSS", level: 90 },
-      { name: "JavaScript", level: 88 },
-      { name: "TypeScript", level: 85 },
-      { name: "React.js", level: 90 },
-      { name: "Next.js", level: 82 },
+      { name: "HTML", level: "Used in real projects" },
+      { name: "CSS", level: "Used in real projects" },
+      { name: "JavaScript", level: "Used in real projects" },
+      { name: "TypeScript", level: "Used in real projects" },
+      { name: "React.js", level: "Production experience" },
+      { name: "Next.js", level: "Personal & client projects" },
     ],
     styling: [
-      { name: "Tailwind CSS", level: 92 },
-      { name: "Sass", level: 85 },
-      { name: "DaisyUI", level: 95 },
+      { name: "Tailwind CSS", level: "Production experience" },
+      { name: "Sass", level: "Used in real projects" },
+      { name: "DaisyUI", level: "Used in real projects" },
     ],
     tools: [
-      { name: "Firebase", level: 78 },
-      { name: "Git & GitHub", level: 88 },
-      { name: "AI Integration", level: 85 },
+      { name: "Firebase", level: "Used in real projects" },
+      { name: "Git & GitHub", level: "Daily use" },
+      { name: "AI Integration", level: "Daily use in development" },
     ],
   };
 
@@ -106,7 +106,7 @@ const About = () => {
                         {skill.name}
                       </span>
                       <span className="text-gray-500 text-sm">
-                        {skill.level}%
+                        {skill.level}
                       </span>
                     </div>
                     <div className="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
@@ -131,7 +131,7 @@ const About = () => {
                         {skill.name}
                       </span>
                       <span className="text-gray-500 text-sm">
-                        {skill.level}%
+                        {skill.level}
                       </span>
                     </div>
                     <div className="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
@@ -156,7 +156,7 @@ const About = () => {
                         {skill.name}
                       </span>
                       <span className="text-gray-500 text-sm">
-                        {skill.level}%
+                        {skill.level}
                       </span>
                     </div>
                     <div className="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
