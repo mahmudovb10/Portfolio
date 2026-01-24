@@ -70,7 +70,7 @@ const Contact = () => {
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-linear-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
             Get In Touch
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
@@ -198,7 +198,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:-translate-y-1"
+                className="w-full px-6 py-3 bg-linear-to-r from-purple-600 to-cyan-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:-translate-y-1"
               >
                 Send Message
               </button>

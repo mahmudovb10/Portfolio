@@ -38,7 +38,7 @@ const Projects = () => {
     <section id="projects" className="min-h-screen py-20 px-4 md:pb-20 pb-24">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-linear-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
             Projects
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
@@ -58,7 +58,7 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-slate-900 to-transparent opacity-60"></div>
               </div>
 
               <div className="p-6">
@@ -83,7 +83,7 @@ const Projects = () => {
                 <div className="flex gap-3">
                   <a
                     href={project.liveLink}
-                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-lg text-sm font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
+                    className="flex items-center gap-2 px-4 py-2 bg-linear-to-r from-purple-600 to-cyan-600 rounded-lg text-sm font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
                   >
                     <ExternalLink size={16} />
                     Live Demo

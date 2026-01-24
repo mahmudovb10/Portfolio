@@ -71,14 +71,14 @@ const Resume = () => {
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-linear-to-r  from-purple-500 to-cyan-500 bg-clip-text text-transparent">
             Resume
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto mb-8">
             Download my resume or view my qualifications and skills below
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:-translate-y-1">
+            <button className="flex items-center gap-2 px-6 py-3 bg-linear-to-r from-purple-600 to-cyan-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:-translate-y-1">
               <Download size={20} />
               Download PDF
             </button>
@@ -118,7 +118,7 @@ const Resume = () => {
                     </div>
                     <div className="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
                       <div
-                        className={`bg-gradient-to-r ${skill.color} h-2.5 rounded-full transition-all duration-1000 shadow-lg`}
+                        className={`bg-linear-to-r ${skill.color} h-2.5 rounded-full transition-all duration-1000 shadow-lg`}
                         style={{ width: `${skill.level}%` }}
                       />
                     </div>
@@ -144,7 +144,7 @@ const Resume = () => {
                     </div>
                     <div className="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
                       <div
-                        className={`bg-gradient-to-r ${skill.color} h-2.5 rounded-full transition-all duration-1000 shadow-lg`}
+                        className={`bg-linear-to-r ${skill.color} h-2.5 rounded-full transition-all duration-1000 shadow-lg`}
                         style={{ width: `${skill.level}%` }}
                       />
                     </div>
@@ -170,7 +170,7 @@ const Resume = () => {
                     </div>
                     <div className="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
                       <div
-                        className={`bg-gradient-to-r ${skill.color} h-2.5 rounded-full transition-all duration-1000 shadow-lg`}
+                        className={`bg-linear-to-r ${skill.color} h-2.5 rounded-full transition-all duration-1000 shadow-lg`}
                         style={{ width: `${skill.level}%` }}
                       />
                     </div>
@@ -222,7 +222,7 @@ const Resume = () => {
                 className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-gradient-to-br from-purple-500/20 to-cyan-500/20 rounded-lg">
+                  <div className="p-3 bg-linear-to-br from-purple-500/20 to-cyan-500/20 rounded-lg">
                     <Award className="text-purple-400" size={24} />
                   </div>
                   <div className="flex-1">

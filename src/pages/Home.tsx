@@ -41,7 +41,7 @@ const HomePage = () => {
               className="mb-6 opacity-0 animate-fadeIn"
               style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}
             >
-              <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent">
+              <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-linear-to-r from-purple-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent">
                 Bahodirxon Mahmudov
               </h1>
             </div>
@@ -70,7 +70,7 @@ const HomePage = () => {
             >
               <a
                 href="#projects"
-                className="px-8 py-3 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:-translate-y-1"
+                className="px-8 py-3 bg-linear-to-r from-purple-600 to-cyan-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:-translate-y-1"
               >
                 View Projects
               </a>
@@ -103,7 +103,7 @@ const HomePage = () => {
               className="relative opacity-0 animate-fadeIn"
               style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-purple-500 to-cyan-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-500/30 shadow-2xl shadow-purple-500/20">
                 <img
                   src="/deskuser.jpg"
@@ -111,9 +111,9 @@ const HomePage = () => {
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-xl opacity-50 animate-bounce"></div>
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-linear-to-r from-purple-500 to-pink-500 rounded-full blur-xl opacity-50 animate-bounce"></div>
               <div
-                className="absolute -bottom-4 -left-4 w-24 h-24 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur-xl opacity-50 animate-bounce"
+                className="absolute -bottom-4 -left-4 w-24 h-24 bg-linear-to-r from-cyan-500 to-blue-500 rounded-full blur-xl opacity-50 animate-bounce"
                 style={{ animationDelay: "0.5s" }}
               ></div>
             </div>
