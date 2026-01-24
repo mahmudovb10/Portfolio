@@ -42,7 +42,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             <div className="shrink-0">
               <span className="text-2xl font-bold bg-linear-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
-                BM.
+                BM
               </span>
             </div>
             <div className="flex items-center space-x-8">

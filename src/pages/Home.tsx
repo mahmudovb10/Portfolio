@@ -70,7 +70,7 @@ const HomePage = () => {
             >
               <a
                 href="#projects"
-                className="px-8 py-3 bg-linear-to-r from-purple-600 to-cyan-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:-translate-y-1"
+                className="px-8 py-3 bg-linear-to-r border-2 border-cyan-500 hover:bg-cyan-500/10  hover:shadow-cyan-500/50 rounded-lg font-semibold hover:shadow-lg  transition-all duration-300 transform hover:-translate-y-1"
               >
                 View Projects
               </a>
