@@ -78,14 +78,20 @@ const Resume = () => {
             Download my resume or view my qualifications and skills below
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="flex items-center gap-2 px-6 py-3 bg-linear-to-r from-purple-600 to-cyan-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:-translate-y-1">
+            <a
+              href="/CV.pdf"
+              className="flex items-center gap-2 px-6 py-3 bg-linear-to-r from-purple-600 to-cyan-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:-translate-y-1"
+            >
               <Download size={20} />
               Download PDF
-            </button>
-            <button className="flex items-center gap-2 px-6 py-3 border-2 border-purple-500 rounded-lg font-semibold hover:bg-purple-500/10 transition-all duration-300">
+            </a>
+            <a
+              href="/CV.pdf"
+              className="flex items-center gap-2 px-6 py-3 border-2 border-purple-500 rounded-lg font-semibold hover:bg-purple-500/10 transition-all duration-300"
+            >
               <ExternalLink size={20} />
               View Full Resume
-            </button>
+            </a>
           </div>
         </div>
         <div className="mb-16 bg-slate-900/50 border-2 border-dashed border-slate-700 rounded-2xl p-8 text-center hover:border-purple-500/50 transition-all duration-300">
@@ -94,6 +100,12 @@ const Resume = () => {
           <p className="text-sm text-gray-500">
             Upload your resume PDF to display it here
           </p>
+          ,
+          <iframe
+            src="/CV.pdf"
+            className="w-full h-[600px]"
+            title="Resume Preview"
+          />
         </div>
         <div className="mb-16">
           <h3 className="text-3xl font-bold mb-8 text-center">
