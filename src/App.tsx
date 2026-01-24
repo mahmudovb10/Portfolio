@@ -1,10 +1,11 @@
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import HomePage from "./pages/Home";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
-import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
+
 function App() {
   return (
     <div className="bg-slate-950 text-white min-h-screen">
