@@ -24,7 +24,7 @@ const Projects = () => {
       description:
         "Greend Mind gul do'koni uchun preview sayt. Bu saytda xaridor gullar narxi va kompaniya haqida malumot olishi mumkin",
       image: "/green.png",
-      technologies: ["React", "CSS", "CSS"],
+      technologies: ["React", "Tailwind CSS", "CSS"],
       liveLink: "https://green-mind-eta.vercel.app/",
       githubLink: "https://github.com/mahmudovb10/Green-Mind",
     },
