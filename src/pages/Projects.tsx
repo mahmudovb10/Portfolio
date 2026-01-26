@@ -38,6 +38,24 @@ const Projects = () => {
       liveLink: "https://examfigma-g8a5.vercel.app/",
       githubLink: "https://github.com/mahmudovb10/Healthy-Recipe",
     },
+    {
+      id: 4,
+      title: "PNT",
+      description:
+        "Bu sayt orqli qog'ozbozlik muammosini bartaraf qildim. Oldin Passport malumotlarini qog'ozda saqlashar edi bu esa xavfsiz emas edi. Men qurgan vebsayt orqali pasport malumotlari saytda saqlanadi va bu ancha xavfsiz, saytga faqat checklangan foydalanuvchilar kira oladi holos",
+      image: "/nnjbj",
+      technologies: [
+        "React.js",
+        "Java Script",
+        "Type Script",
+        "Tailwind CSS",
+        "MongoDB ( Databse Integration )",
+        "REST API",
+        "JWT Authentication",
+      ],
+      levelLink: "https://securitysite-eight.vercel.app/",
+      githubLink: "https://github.com/mahmudovb10/securitysite",
+    },
   ];
 
   return (
