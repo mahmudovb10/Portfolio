@@ -43,7 +43,7 @@ const Projects = () => {
       title: "PNT",
       description:
         "Bu sayt orqli qog'ozbozlik muammosini bartaraf qildim. Oldin Passport malumotlarini qog'ozda saqlashar edi bu esa xavfsiz emas edi. Men qurgan vebsayt orqali pasport malumotlari saytda saqlanadi va bu ancha xavfsiz, saytga faqat checklangan foydalanuvchilar kira oladi holos",
-      image: "/nnjbj",
+      image: "/pnt.png",
       technologies: [
         "React.js",
         "Java Script",
