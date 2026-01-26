@@ -8,7 +8,13 @@ const Projects = () => {
       description:
         "Bu saytda xaridor mahsulot haqida batafsil malumot olishi bilan birga, o'zining va sotuvchi operatorlarni vaqtini tejamoqda",
       image: "/orman.png",
-      technologies: ["React", "Tailwind CSS", "Firebase"],
+      technologies: [
+        "React.js",
+        "Type Script",
+        "Java Script",
+        "Firebase",
+        "Tailwind CSS",
+      ],
       liveLink: "https://ormanuz.vercel.app/",
       githubLink: "https://github.com/mahmudovb10/Orman",
     },
@@ -18,7 +24,7 @@ const Projects = () => {
       description:
         "Greend Mind gul do'koni uchun preview sayt. Bu saytda xaridor gullar narxi va kompaniya haqida malumot olishi mumkin",
       image: "/green.png",
-      technologies: ["React", "CSS"],
+      technologies: ["React", "CSS", "CSS"],
       liveLink: "https://green-mind-eta.vercel.app/",
       githubLink: "https://github.com/mahmudovb10/Green-Mind",
     },
@@ -28,7 +34,7 @@ const Projects = () => {
       description:
         "Health Recipe restorani uchun menyu sayt. Bunda xaridor buyurtma qilgan taomini yoki boshqa taomlarning tarkibiy qismlarini ko'rishi mumkin",
       image: "/healthy.png",
-      technologies: ["React", "JavaScript", "Tailwind CSS"],
+      technologies: ["React", "JavaScript", "Tailwind CSS", "CSS"],
       liveLink: "https://examfigma-g8a5.vercel.app/",
       githubLink: "https://github.com/mahmudovb10/Healthy-Recipe",
     },
