@@ -53,7 +53,7 @@ const Projects = () => {
         "REST API",
         "JWT Authentication",
       ],
-      livelLink: "https://securitysite-eight.vercel.app/",
+      liveLink: "https://securitysite-eight.vercel.app/",
       githubLink: "https://",
     },
   ];
