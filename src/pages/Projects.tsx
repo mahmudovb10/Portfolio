@@ -54,7 +54,7 @@ const Projects = () => {
         "JWT Authentication",
       ],
       levelLink: "https://securitysite-eight.vercel.app/",
-      githubLink: "https://github.com/mahmudovb10/securitysite",
+      githubLink: "",
     },
   ];
 
