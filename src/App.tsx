@@ -8,25 +8,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="bg-slate-950 text-white min-h-screen">
-      <style>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fadeIn {
-          animation: fadeIn 0.8s ease-out;
-        }
-        html {
-          scroll-behavior: smooth;
-        }
-      `}</style>
+    <div className="bg-white dark:bg-slate-950 text-slate-900 dark:text-white min-h-screen transition-colors duration-300">
       <Navbar />
       <main>
         <HomePage />

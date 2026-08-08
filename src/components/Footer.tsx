@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import Reveal from "./Reveal";
 
 const Footer = () => {
   const socialLinks = [
@@ -20,27 +21,29 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-slate-900 border-t border-slate-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-gray-400 text-sm">
-            © 2026 Bahodirxon Mahmudov. All rights reserved.
+    <footer className="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
+        <Reveal>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="text-slate-500 dark:text-gray-400 text-sm">
+              © 2026 Bahodirxon Mahmudov. All rights reserved.
+            </div>
+            <div className="flex gap-3">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2.5 rounded-full border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-gray-400 hover:text-violet-600 dark:hover:text-violet-400 hover:border-violet-400 hover:-translate-y-0.5 transition-all duration-300"
+                  aria-label={link.label}
+                >
+                  {link.icon}
+                </a>
+              ))}
+            </div>
           </div>
-          <div className="flex gap-6">
-            {socialLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-cyan-400 transition-colors duration-300"
-                aria-label={link.label}
-              >
-                {link.icon}
-              </a>
-            ))}
-          </div>
-        </div>
+        </Reveal>
       </div>
     </footer>
   );
