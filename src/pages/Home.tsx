@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import { ArrowDown } from "lucide-react";
+import Reveal from "../components/Reveal";
+
 const HomePage = () => {
   const [displayText, setDisplayText] = useState("");
   const fullText = "Frontend Developer | Modern and Minimalist Website Builder";
@@ -36,93 +39,101 @@ const HomePage = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center px-4 pt-16"
+      className="relative min-h-screen flex items-center justify-center px-4 pt-16 overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto">
+      {/* Decorative solid-color blobs, no gradients */}
+      <div className="absolute top-24 left-10 w-72 h-72 bg-violet-200 dark:bg-violet-600/20 rounded-full blur-3xl opacity-50 animate-pulse-slow pointer-events-none" />
+      <div className="absolute bottom-10 right-10 w-80 h-80 bg-indigo-200 dark:bg-indigo-600/20 rounded-full blur-3xl opacity-50 animate-pulse-slow pointer-events-none" />
+
+      <div className="max-w-6xl mx-auto relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left order-2 md:order-1">
-            <div
-              className="mb-6 opacity-0 animate-fadeIn"
-              style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}
-            >
-              <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-linear-to-r from-purple-500 via-pink-500 to-cyan-500 bg-clip-text text-transparent">
+            <Reveal direction="left">
+              <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-violet-100 dark:bg-violet-500/15 text-violet-700 dark:text-violet-300 text-xs font-semibold tracking-wide uppercase">
+                Salom, men
+              </span>
+            </Reveal>
+
+            <Reveal direction="left" delay={80}>
+              <h1 className="text-4xl md:text-6xl font-bold mb-4 text-slate-900 dark:text-white">
                 Bahodirxon Mahmudov
               </h1>
-            </div>
-            <div
-              className="mb-8 opacity-0 animate-fadeIn h-8"
-              style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
-            >
-              <p className="text-lg md:text-xl text-gray-300">
+            </Reveal>
+
+            <Reveal direction="left" delay={160}>
+              <p className="text-lg md:text-xl text-violet-600 dark:text-violet-400 mb-6 h-8">
                 {displayText}
                 <span className="animate-pulse">|</span>
               </p>
-            </div>
-            <div
-              className="mb-8 opacity-0 animate-fadeIn"
-              style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}
-            >
-              <p className="text-gray-400 leading-relaxed">
+            </Reveal>
+
+            <Reveal direction="left" delay={240}>
+              <p className="text-slate-600 dark:text-gray-400 leading-relaxed mb-8 max-w-lg">
                 20 years old passionate developer from Fergana, specializing in
                 creating modern, minimalist, and user-friendly web experiences
                 with cutting-edge technologies.
               </p>
-            </div>
-            <div
-              className="flex flex-wrap justify-center md:justify-start gap-4 mb-8 opacity-0 animate-fadeIn"
-              style={{ animationDelay: "0.8s", animationFillMode: "forwards" }}
-            >
-              <a
-                href="#projects"
-                className="px-8 py-3 bg-linear-to-r border-2 border-cyan-500 hover:bg-cyan-500/10  hover:shadow-cyan-500/50 rounded-lg font-semibold hover:shadow-lg  transition-all duration-300 transform hover:-translate-y-1"
-              >
-                View Projects
-              </a>
-              <a
-                href="#contact"
-                className="px-8 py-3 border-2 border-purple-500 rounded-lg font-semibold hover:bg-purple-500/10 transition-all duration-300"
-              >
-                Get In Touch
-              </a>
-            </div>
-            <div
-              className="opacity-0 animate-fadeIn"
-              style={{ animationDelay: "1s", animationFillMode: "forwards" }}
-            >
-              <p className="text-sm text-gray-500 mb-4">Tech Stack</p>
-              <div className="flex flex-wrap justify-center md:justify-start gap-3">
-                {techStack.map((tech) => (
+            </Reveal>
+
+            <Reveal direction="left" delay={320}>
+              <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-10">
+                <a
+                  href="#projects"
+                  className="px-8 py-3 bg-violet-600 text-white hover:bg-violet-700 rounded-full font-semibold shadow-lg shadow-violet-600/20 hover:shadow-violet-600/40 hover:-translate-y-0.5 transition-all duration-300"
+                >
+                  View Projects
+                </a>
+                <a
+                  href="#contact"
+                  className="px-8 py-3 border-2 border-slate-300 dark:border-slate-700 rounded-full font-semibold hover:border-violet-500 hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-300"
+                >
+                  Get In Touch
+                </a>
+              </div>
+            </Reveal>
+
+            <Reveal direction="left" delay={400}>
+              <p className="text-sm text-slate-500 dark:text-gray-500 mb-4 font-medium">
+                Tech Stack
+              </p>
+              <div className="flex flex-wrap justify-center md:justify-start gap-2">
+                {techStack.map((tech, i) => (
                   <span
                     key={tech}
-                    className="px-4 py-2 bg-slate-800/50 border border-slate-700 rounded-full text-sm text-gray-300 hover:border-purple-500 hover:text-purple-400 transition-all duration-300"
+                    style={{ transitionDelay: `${420 + i * 25}ms` }}
+                    className="px-3.5 py-1.5 bg-slate-100 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 rounded-full text-sm text-slate-700 dark:text-gray-300 hover:border-violet-500 hover:text-violet-600 dark:hover:text-violet-400 hover:-translate-y-0.5 transition-all duration-300"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-            </div>
+            </Reveal>
           </div>
+
           <div className="flex justify-center items-center order-1 md:order-2">
-            <div
-              className="relative opacity-0 animate-fadeIn"
-              style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
-            >
-              <div className="absolute inset-0 bg-linear-to-r from-purple-500 to-cyan-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-500/30 shadow-2xl shadow-purple-500/20">
-                <img
-                  src="/deskuser.jpg"
-                  alt="Bahodirxon Mahmudov"
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                />
+            <Reveal direction="right" delay={100}>
+              <div className="relative animate-float">
+                <div className="absolute -inset-3 rounded-full border-2 border-dashed border-violet-300 dark:border-violet-700/50" />
+                <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-violet-500/40 shadow-2xl shadow-violet-500/20">
+                  <img
+                    src="/deskuser.jpg"
+                    alt="Bahodirxon Mahmudov"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="absolute -bottom-2 -right-2 w-14 h-14 rounded-full bg-indigo-600 flex items-center justify-center text-white text-xs font-bold shadow-lg">
+                  20yo
+                </div>
               </div>
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-linear-to-r from-purple-500 to-pink-500 rounded-full blur-xl opacity-50 animate-bounce"></div>
-              <div
-                className="absolute -bottom-4 -left-4 w-24 h-24 bg-linear-to-r from-cyan-500 to-blue-500 rounded-full blur-xl opacity-50 animate-bounce"
-                style={{ animationDelay: "0.5s" }}
-              ></div>
-            </div>
+            </Reveal>
           </div>
         </div>
+
+        <Reveal delay={600}>
+          <div className="hidden md:flex justify-center mt-16 text-slate-400 dark:text-gray-600 animate-bounce">
+            <ArrowDown size={24} />
+          </div>
+        </Reveal>
       </div>
     </section>
   );

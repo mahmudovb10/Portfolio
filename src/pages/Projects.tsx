@@ -1,4 +1,5 @@
 import { ExternalLink, Github } from "lucide-react";
+import Reveal from "../components/Reveal";
 
 const Projects = () => {
   const projects = [
@@ -37,7 +38,6 @@ const Projects = () => {
       liveLink: "https://auron-five.vercel.app/",
       githubLink: "Private Repository",
     },
-
     {
       id: 3,
       title: "Green Mind",
@@ -79,69 +79,78 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="min-h-screen py-20 px-4 md:pb-20 pb-24">
+    <section
+      id="projects"
+      className="min-h-screen py-24 px-4 bg-slate-50 dark:bg-slate-900/20"
+    >
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-linear-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
-            Projects
-          </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            A collection of my recent work and personal projects
-          </p>
-        </div>
+        <Reveal>
+          <div className="text-center mb-16">
+            <span className="inline-block mb-3 px-4 py-1.5 rounded-full bg-violet-100 dark:bg-violet-500/15 text-violet-700 dark:text-violet-300 text-xs font-semibold tracking-wide uppercase">
+              03 — Work
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">
+              Projects
+            </h2>
+            <p className="text-slate-600 dark:text-gray-400 max-w-2xl mx-auto">
+              A collection of my recent work and personal projects
+            </p>
+          </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              className="bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden hover:border-purple-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10 group"
-            >
-              <div className="relative overflow-hidden h-48">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-linear-to-t from-slate-900 to-transparent opacity-60"></div>
-              </div>
+          {projects.map((project, index) => (
+            <Reveal key={project.id} delay={(index % 2) * 120}>
+              <div className="group bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden hover:border-violet-400 hover:-translate-y-1 hover:shadow-2xl hover:shadow-violet-500/10 transition-all duration-500 h-full flex flex-col">
+                <div className="relative overflow-hidden h-48">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <span className="absolute top-3 left-3 w-8 h-8 rounded-full bg-violet-600 text-white text-xs font-bold flex items-center justify-center shadow-md">
+                    {String(project.id).padStart(2, "0")}
+                  </span>
+                </div>
 
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-2">
-                  {project.title}
-                </h3>
-                <p className="text-gray-400 text-sm mb-4 leading-relaxed">
-                  {project.description}
-                </p>
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                  <p className="text-slate-600 dark:text-gray-400 text-sm mb-4 leading-relaxed flex-1">
+                    {project.description}
+                  </p>
 
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1 bg-slate-800 text-cyan-400 text-xs rounded-full border border-slate-700"
+                  <div className="flex flex-wrap gap-2 mb-5">
+                    {project.technologies.map((tech, i) => (
+                      <span
+                        key={i}
+                        className="px-2.5 py-1 bg-violet-50 dark:bg-slate-800 text-violet-700 dark:text-violet-300 text-xs rounded-md border border-violet-100 dark:border-slate-700"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex gap-3 mt-auto">
+                    <a
+                      href={project.liveLink}
+                      className="flex items-center gap-2 px-4 py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-lg text-sm font-semibold shadow-md shadow-violet-600/20 hover:-translate-y-0.5 transition-all duration-300"
                     >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="flex gap-3">
-                  <a
-                    href={project.liveLink}
-                    className="flex items-center gap-2 px-4 py-2 bg-linear-to-r from-purple-600 to-cyan-600 rounded-lg text-sm font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
-                  >
-                    <ExternalLink size={16} />
-                    Live Demo
-                  </a>
-                  <a
-                    href={project.githubLink}
-                    className="flex items-center gap-2 px-4 py-2 border-2 border-slate-700 rounded-lg text-sm font-semibold hover:border-purple-500 transition-all duration-300"
-                  >
-                    <Github size={16} />
-                    Code
-                  </a>
+                      <ExternalLink size={16} />
+                      Live Demo
+                    </a>
+                    <a
+                      href={project.githubLink}
+                      className="flex items-center gap-2 px-4 py-2 border-2 border-slate-300 dark:border-slate-700 rounded-lg text-sm font-semibold hover:border-violet-500 hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-300"
+                    >
+                      <Github size={16} />
+                      Code
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
