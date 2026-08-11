@@ -38,6 +38,7 @@ const Projects = () => {
       liveLink: "https://auron-five.vercel.app/",
       githubLink: "Private Repository",
     },
+
     {
       id: 3,
       title: "Green Mind",
@@ -74,6 +75,27 @@ const Projects = () => {
         "JWT Authentication",
       ],
       liveLink: "https://securitysite-eight.vercel.app/",
+      githubLink: "https://",
+    },
+    {
+      id: 6,
+      title: "Auron bot",
+      description:
+        "Auron Telegram Bot Guruhlar uchun aqlli yordamchi, kanallar uchun kunlik yangiliklar manbai. Auron — Telegram guruh va kanallar uchun mo'ljallangan, foydalanuvchi tajribasini yengillashtiruvchi bot. Foydalanuvchiga nima beradi: Guruh a'zolarining tez-tez beriladigan savollariga darhol, avtomatik javob — admin doim onlayn bo'lishi shart emas. Kanal a'zolari uchun har kuni yangilanib turadigan, AI va dasturlash sohasidagi eng dolzarb yangiliklar — qo'lda qidirish shart emas. Sifat nazorati — kanalga chiqadigan har bir post admin tomonidan ko'rib chiqiladi, shuning uchun faqat foydali va aniq kontent joylanadi. Har bir guruh o'ziga xos, moslashtirilgan javoblarga ega — umumiy, shablon javoblar emas. Tez va uzluksiz ishlaydi — foydalanuvchi hech qachon botning band yoki o'chiq ekanini sezmaydi.",
+      image: "/auron.png",
+      technologies: [
+        "TypeScript",
+        "Node.js",
+        "grammY",
+        "Express.js",
+        "Firebase Admin SDK / Firestore",
+        "RSS Parser",
+        "Render.com",
+        "cron-job.org,",
+        "UptimeRobot",
+        "node-cron",
+      ],
+      liveLink: "https://t.me/aurronn_ai_bot",
       githubLink: "https://",
     },
   ];
@@ -135,6 +157,7 @@ const Projects = () => {
                   <div className="flex gap-3 mt-auto">
                     <a
                       href={project.liveLink}
+                      target="_blank"
                       className="flex items-center gap-2 px-4 py-2 bg-violet-600 hover:bg-violet-700 text-white rounded-lg text-sm font-semibold shadow-md shadow-violet-600/20 hover:-translate-y-0.5 transition-all duration-300"
                     >
                       <ExternalLink size={16} />
@@ -142,6 +165,7 @@ const Projects = () => {
                     </a>
                     <a
                       href={project.githubLink}
+                      target="_blank"
                       className="flex items-center gap-2 px-4 py-2 border-2 border-slate-300 dark:border-slate-700 rounded-lg text-sm font-semibold hover:border-violet-500 hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-300"
                     >
                       <Github size={16} />

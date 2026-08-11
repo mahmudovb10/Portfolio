@@ -31,7 +31,7 @@ const About = () => {
     {
       icon: <Sparkles size={20} />,
       label: "Additional skills",
-      value: "AI + Backend Integration",
+      value: "AI,  AI + Backend Integration",
     },
   ];
 

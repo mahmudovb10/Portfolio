@@ -48,11 +48,11 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2 shrink-0">
-              <span className="w-8 h-8 rounded-lg bg-violet-600 text-white flex items-center justify-center font-bold text-sm">
+              {/* <span className="w-8 h-8 rounded-lg bg-violet-600 text-white flex items-center justify-center font-bold text-sm">
                 BM
-              </span>
-              <span className="text-sm font-semibold text-slate-500 dark:text-gray-400 tracking-wide">
-                PORTFOLIO
+              </span> */}
+              <span className="text-sm font-semibold text-slate-500 dark:text-gray-400 tracking-wide pl-[2rem]">
+                PERSONAL PORTFOLIO
               </span>
             </div>
             <div className="flex items-center gap-1">
