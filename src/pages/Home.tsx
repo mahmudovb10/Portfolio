@@ -50,7 +50,7 @@ const HomePage = () => {
           <div className="text-center md:text-left order-2 md:order-1">
             <Reveal direction="left">
               <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-violet-100 dark:bg-violet-500/15 text-violet-700 dark:text-violet-300 text-xs font-semibold tracking-wide uppercase">
-                Salom, men
+                Hi, I'm
               </span>
             </Reveal>
 
