@@ -10,8 +10,14 @@ import Reveal from "../components/Reveal";
 const Resume = () => {
   const education = [
     {
+      institution: "Tashkent University of Economics and Technologies",
+      degree: "Bachelor's: Economics",
+      year: "2026 - present",
+      description: "lorem lorem lorem lorem lorem",
+    },
+    {
       institution: "Najot Ta'lim",
-      degree: "Frontend Developer",
+      degree: "Standart: Frontend Developer",
       year: "2025",
       description:
         "Completed comprehensive frontend development bootcamp covering modern web technologies and best practices.",
@@ -19,7 +25,7 @@ const Resume = () => {
     {
       institution: "Vocational College",
       degree: "Professional Education",
-      year: "2024",
+      year: "2023 - 2024",
       description:
         "Foundation in technical education and professional skills development.",
     },
@@ -31,6 +37,12 @@ const Resume = () => {
       issuer: "Najot Ta'lim",
       year: "2025",
       type: "Professional Certificate",
+    },
+    {
+      name: "Diploma of Primary Professional Education",
+      issuer: "Vocational College",
+      year: "2024",
+      type: "Secondary Specialized Education Diploma",
     },
   ];
 
@@ -101,11 +113,11 @@ const Resume = () => {
                       <GraduationCap size={20} />
                     </span>
                     <div className="bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 hover:border-violet-400 hover:-translate-y-1 transition-all duration-300">
-                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-2">
+                      <div className="flex flex-row items-start md:items-center md:justify-between mb-2 gap-2">
                         <h4 className="text-xl font-semibold text-slate-900 dark:text-white">
                           {edu.institution}
                         </h4>
-                        <span className="text-sm text-violet-700 dark:text-violet-300 bg-violet-100 dark:bg-violet-500/15 px-3 py-1 rounded-full w-fit">
+                        <span className="text-sm text-violet-700 dark:text-violet-300 bg-violet-100 dark:bg-violet-500/15 px-3 py-1 rounded-full w-fit whitespace-nowrap shrink-0">
                           {edu.year}
                         </span>
                       </div>
